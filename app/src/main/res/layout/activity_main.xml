@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <GridLayout
+        android:id="@+id/main_part_activity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:columnCount="1"
+        android:rowCount="4"
+        tools:ignore="UselessParent">
+
+        <TextView
+            android:id="@+id/lbl_last_save_color"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:layout_marginEnd="50dp"
+            android:text="Последний сохраненный цвет"
+            android:textSize="20sp"
+            android:fontFamily="sans-serif-medium"
+            android:textColor="@color/main_text_color"
+            android:layout_gravity="center"
+            android:visibility="invisible"
+            tools:ignore="HardcodedText" />
+
+        <View
+            android:id="@+id/View_last_save_color"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="100dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginEnd="50dp"
+            android:src="@drawable/icon_draw"
+            android:visibility="invisible"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:id="@+id/icon_draw"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:src="@drawable/icon_draw"
+            tools:ignore="ContentDescription" />
+
+        <android.widget.Button
+            android:id="@+id/btn_start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:text="Создать новый цвет"
+            android:textSize="20sp"
+            android:fontFamily="sans-serif-black"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/btn_start_color"
+            android:layout_gravity="center"
+            tools:ignore="HardcodedText" />
+    </GridLayout>
+</RelativeLayout>

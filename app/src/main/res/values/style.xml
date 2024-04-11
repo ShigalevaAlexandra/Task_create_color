@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="txtView_RGB">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">30dp</item>
+        <item name="android:paddingStart">15dp</item>
+        <item name="android:paddingEnd">0dp</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/input_text_color</item>
+    </style>
+    <style name="seekbar">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:max">255</item>
+        <item name="android:progress">177</item>
+    </style>
+    <style name="seekbar_red">
+        <item name="android:progressBackgroundTint">@color/red_color</item>
+        <item name="android:progressTint">@color/red_color</item>
+        <item name="android:colorControlActivated">@color/red_color</item>
+    </style>
+    <style name="seekbar_green">
+        <item name="android:progressBackgroundTint">@color/green_color</item>
+        <item name="android:progressTint">@color/green_color</item>
+        <item name="android:colorControlActivated">@color/green_color</item>
+    </style>
+    <style name="seekbar_blue">
+        <item name="android:progressBackgroundTint">@color/blue_color</item>
+        <item name="android:progressTint">@color/blue_color</item>
+        <item name="android:colorControlActivated">@color/blue_color</item>
+    </style>
+</resources>
